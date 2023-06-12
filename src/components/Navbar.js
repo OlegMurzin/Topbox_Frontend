@@ -45,7 +45,7 @@ function Navbar() {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Datenbank
+                  Datenbanks
                 </NavLink>
               </li>
               <li className="nav-item">
