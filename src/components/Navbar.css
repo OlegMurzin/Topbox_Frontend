@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  background: #19191a;
+  background: #00003c;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .nav-item:hover {
-  border-bottom: 2px solid #09bef0;
+  border-bottom: 2px solid #001ed2;
 }
 
 .nav-links {
@@ -74,7 +74,7 @@
 }
 
 .activated {
-  color: #09bef0;
+  color: #001ed2;
 }
 
 .fa-bars {
@@ -102,7 +102,7 @@
   }
 
   .nav-menu.active {
-    background: #19191a;
+    background: #00003c;
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
@@ -117,7 +117,7 @@
   }
 
   .nav-links:hover {
-    color: #09bef0;
+    color: #001ed2;
     transform: scale(1.2);
     transition: all 0.3s ease;
   }

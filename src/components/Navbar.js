@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { GiRocketThruster } from "react-icons/gi";
+import logo from '../../src/assets/dmt-logo.png';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
@@ -18,8 +19,8 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <GiRocketThruster className="navbar-icon" />
-              Skye
+              <img src={logo} className="navbar-icon" />
+              XSafe-Topbox
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -33,7 +34,7 @@ function Navbar() {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Home
+                  Startseite
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -44,7 +45,7 @@ function Navbar() {
                   }
                   onClick={closeMobileMenu}
                 >
-                  About
+                  Datenbank
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -55,7 +56,7 @@ function Navbar() {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Contact
+                  Sonstiges
                 </NavLink>
               </li>
             </ul>
